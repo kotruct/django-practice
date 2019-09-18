@@ -1,2 +1,2 @@
 # django-practice
-# django-practice
+each subdir = django project
