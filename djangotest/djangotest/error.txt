@@ -1,0 +1,93 @@
+----------------------------------------
+[20/Sep/2019 15:48:09] "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+Traceback (most recent call last):
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 138, in run
+    self.finish_response()
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 180, in finish_response
+    self.write(data)
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 274, in write
+    self.send_headers()
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 332, in send_headers
+    self.send_preamble()
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 255, in send_preamble
+    ('Date: %s\r\n' % format_date_time(time.time())).encode('iso-8859-1')
+[20/Sep/2019 15:48:09] "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "C:\Users\{UserName}\Anaconda3\lib\socketserver.py", line 775, in write
+    self._sock.sendall(b)
+
+ConnectionAbortedError: [WinError 10053] 確立された接続がホスト コンピューターのソウトウェアによって中止されました。
+----------------------------------------
+Exception happened during processing of request from ('127.0.0.1', 63132)
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 138, in run
+    self.finish_response()
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 138, in run
+    self.finish_response()
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 180, in finish_response
+    self.write(data)
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 274, in write
+    self.send_headers()
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 180, in finish_response
+    self.write(data)
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 332, in send_headers
+    self.send_preamble()
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 255, in send_preamble
+    ('Date: %s\r\n' % format_date_time(time.time())).encode('iso-8859-1')
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 274, in write
+    self.send_headers()
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 332, in send_headers
+    self.send_preamble()
+  File "C:\Users\{UserName}\Anaconda3\lib\socketserver.py", line 775, in write
+    self._sock.sendall(b)
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 255, in send_preamble
+    ('Date: %s\r\n' % format_date_time(time.time())).encode('iso-8859-1')
+ConnectionAbortedError: [WinError 10053] 確立された接続がホスト コンピューターのソウトウェアによって中止されました。
+
+During handling of the above exception, another exception occurred:
+
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+Traceback (most recent call last):
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 141, in run
+    self.handle_error()
+  File "C:\Users\{UserName}\Anaconda3\lib\socketserver.py", line 775, in write
+    self._sock.sendall(b)
+  File "C:\Users\{UserName}\Anaconda3\lib\site-packages\django\core\servers\basehttp.py", line 116, in handle_error
+    super().handle_error()
+ConnectionAbortedError: [WinError 10053] 確立された接続がホスト コンピューターのソウトウェアによって中止されました。
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 365, in handle_error
+    self.log_exception(sys.exc_info())
+----------------------------------------
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 359, in log_exception
+    stderr.flush()
+Exception happened during processing of request from   File "c:\Users\{UserName}\.vscode\extensions\ms-python.python-2019.9.34911\pythonFiles\lib\python\ptvsd\_vendored\pydevd\_pydevd_bundle\pydevd_io.py", line 53, in flush
+    r.flush()
+('127.0.0.1', 63139)OSError: [WinError 87] パラメーターが間違っています。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\{UserName}\Anaconda3\lib\socketserver.py", line 639, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\{UserName}\Anaconda3\lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\{UserName}\Anaconda3\lib\socketserver.py", line 696, in __init__
+    self.handle()
+  File "C:\Users\{UserName}\Anaconda3\lib\site-packages\django\core\servers\basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "C:\Users\{UserName}\Anaconda3\lib\site-packages\django\core\servers\basehttp.py", line 194, in handle_one_request
+    handler.run(self.server.get_app())
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\handlers.py", line 144, in run
+    self.close()
+
+  File "C:\Users\{UserName}\Anaconda3\lib\site-packages\django\core\servers\basehttp.py", line 111, in close
+    super().close()
+  File "C:\Users\{UserName}\Anaconda3\lib\wsgiref\simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+Traceback (most recent call last):
+AttributeError: 'NoneType' object has no attribute 'split'
+---------------------------------------- 
